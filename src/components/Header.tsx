@@ -35,7 +35,10 @@ const Header = () => {
 
   return (
     <header className="bg-emerald-400 text-white relative">
-      <nav className="container mx-auto px-6 py-4">
+      <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
+        <div className="text-2xl font-bold">
+          TLCCS
+        </div>
 
         <ul className="hidden md:flex justify-center space-x-8 font-semibold tracking-wider">
           {menuItems.map((item) => (

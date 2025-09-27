@@ -1,6 +1,9 @@
+'use client'
+import { useAppContext } from '@/context/AppContext';
 import React from 'react'
 
 const AboutSection = () => {
+    const { setShowAboutCeo } = useAppContext();
   return (
     <section className="bg-white py-16 px-6">
       <div className="container mx-auto max-w-4xl">
@@ -20,7 +23,7 @@ const AboutSection = () => {
         </div>
 
         <div className="text-center mt-8">
-          <button className="bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-3 px-8 rounded-full transition-colors shadow-lg">
+          <button onClick={() => setShowAboutCeo(true)} className="bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-3 px-8 rounded-full transition-colors shadow-lg">
             Learn More
           </button>
         </div>
