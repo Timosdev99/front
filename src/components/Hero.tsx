@@ -2,27 +2,15 @@ import React from 'react'
 
 const Hero = () => {
   return (
-    <section className="bg-gray-200 py-16 px-6">
-      <div className="container mx-auto text-center">
+    <section
+      className="py-16 px-6 bg-cover bg-center relative"
+      style={{ backgroundImage: "url('/Hero.jpg')" }}
+    >
+      <div className="absolute inset-0 bg-black opacity-50"></div>
+      <div className="container mx-auto text-center relative z-10">
 
-        <div className="flex items-center justify-center mb-8">
-
-          <div className="w-24 h-24 bg-gradient-to-br from-yellow-300 to-yellow-500 rounded-full flex items-center justify-center mr-6 shadow-lg">
-            <div className="text-emerald-600 font-bold text-2xl">
-              TLCCS
-              <div className="text-xs text-emerald-600 font-normal">LLC</div>
-            </div>
-          </div>
-
-
-          <div className="text-left">
-            <h1 className="text-5xl font-bold text-emerald-500 mb-2">
-              Transformational Living
-            </h1>
-            <p className="text-emerald-500 text-lg font-semibold tracking-wider">
-              COACHING & CONSULTING SERVICES
-            </p>
-          </div>
+        <div className="flex flex-col md:flex-row items-center justify-center mb-8">
+          <img src="/TLCCS header v2_2.png" alt="TLCCS Header" className="max-w-full h-autp sm:h-64" />
         </div>
       </div>
     </section>

@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Quote } from 'lucide-react';
 
 const TestimonialsSection = () => {
   const testimonials = [
@@ -14,15 +15,20 @@ const TestimonialsSection = () => {
   ];
 
   return (
-    <section className="bg-gray-100 py-16 px-6 relative">
-      <div className="container mx-auto max-w-6xl">
+    <section
+      className="py-16 px-6 relative bg-cover bg-center"
+      style={{ backgroundImage: "url('/Testomonial.jpg')" }}
+    >
+      <div className="absolute inset-0 bg-black opacity-50"></div>
+      <div className="container mx-auto max-w-6xl relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
-            <div key={index} className="relative bg-white p-8 rounded-lg shadow-sm">
-              {/* Quote mark */}
-              <div className="absolute top-4 right-4 text-emerald-400 text-4xl font-bold">&quot;</div>
-              <div className="text-gray-600 text-sm leading-relaxed italic pr-8">
+            <div key={index} className="relative bg-transparent p-8 flex flex-col justify-between h-full">
+              <div className="text-white text-sm leading-relaxed italic text-center">
                 {testimonial.text}
+              </div>
+              <div className="flex justify-center mt-4">
+                <Quote className="text-green-500" size={38} />
               </div>
             </div>
           ))}
