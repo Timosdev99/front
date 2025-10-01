@@ -28,6 +28,10 @@ const ServicesSection = () => {
     <section className="py-12 bg-white">
       <div className="container mx-auto">
         <h2 className="text-3xl font-bold text-center text-gray-800 mb-8">Our Services</h2>
+        <div className="text-center text-gray-800 mb-8 max-w-4xl mx-auto">
+          <p className=" font-bold">Transformational Living Coaching and Consulting Services, LLC strives to be a company of integrity, professionalism, and reliability to support our clients and customers with meeting their goals.</p>
+          <p className="mt-4 text-gray-600">Our Fit for Life Wellness Program® is designed to help companies and business owners implement a proactive mental health and wellness business model. Specifically for those employees in leadership positions and high stress positions. The Fit for Life Wellness Program® will help to reduce burnout, turnover, increase productivity and promote mental wellness, improve psychological safety and self care in the workplace. Additionally we provide mental wellness training and programs, which can be customized and developed to fit the needs of your company.</p>
+        </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 ">
           {services.map((service, index) => (
             <div
